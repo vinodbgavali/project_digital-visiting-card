@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    margin: 10px;
+    background: linear-gradient(to right, #766df4 0%, #766df4 30%, #6a9bf4 100%) !important;
+    /* background: linear-gradient(
+15deg
+,rgba(0,153,135,.92),rgba(0,95,153,.92)); */
+}
+
+.main_section {
+    padding-left: 0;
+}
+.left_section{
+  
+    max-height: 100vh;
+    border-radius: 10px;
+    position: -webkit-sticky;
+ 
+   
+
+    
+}
+
+
+
+.left_section_top{
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+.left_section_top img{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.list-group-item{
+    border: 0;
+    border-radius: .25rem;
+}
+
+.list-group-item:hover{
+    background-color: #766df4 !important;  
+    color: white;
+}
+
+.list-group .active {
+    color: white;
+    pointer-events: none;
+    cursor: default;
+    /* remove line to change bg color blue */
+    background-color:  #828288 !important;        
+
+}
+.left_section hr{
+    padding: 0;
+    margin: 0 5px;
+}
+
+.list-group i{
+    padding-right: 10px;
+}
+
+.list-group .active {
+    background-color: #766df4 !important;
+}
+
+.left_section_bottom{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    transition: .5s;
+    height: auto;
+}
+
+.right_section{
+    
+    height: auto;
+    padding: 0;
+    transition: margin-left .5s;
+    
+}
+
+.tab-content{
+    min-height: 600px;
+    padding: 20px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+/* list-profile */
+
+.profile_tab{
+    position: relative;
+}
+
+
+.profile_content{
+text-align: center;
+margin-top: 150px;
+z-index: 1;
+position: relative;
+
+}
+
+.profile_content img{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+ .banner_img{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 0;
+    
+}
+
+.banner_img img{
+    width: 100%;
+    max-height: 300px;
+}
+
+
+
+.navbar-toggler{
+    display: none;
+}
+
+
+
+
+
+/* responsive - media query */
+
+
+/* @media (min-width: 992px) {
+    .mobile_menu{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 992px) {
+    .full_screen{
+        display: none;
+    }
+    
+} */
+
+@media (max-width: 767px) {
+
+    .main_section{
+        padding-right: 0;
+    }
+
+    .left_section_top{
+        display: flex;
+        align-items: center;
+        padding: 0;
+        text-align: start;
+        justify-content: space-between;
+    }
+
+
+
+    .profile_img{
+        max-width: 100px;
+        max-height: 100px;
+        overflow: hidden;
+        margin: 0 10px;
+        background-size: cover;
+    }
+    
+    .navbar-toggler{
+        display: block;
+        margin-right: 10px;
+    }
+    
+  .left_section .left_section_bottom{
+
+    width: 120px;
+      position: absolute; 
+      margin-top: 10px;
+      left: -150px;
+     
+    }
+
+    .profile_menu{
+        height: calc(100vh - 110px);
+        position: relative;
+        width: 100px;
+       
+      
+     
+    }
+
+    .list-group{
+        height: calc(100vh - 110px);
+      
+     
+    }
+
+     .list-group-item{
+        width: auto;
+        display: flex;
+        
+        min-height: calc(100%/7.3);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 1px;text-align: center;
+     
+    }
+
+    .list-group-item i{
+        padding-bottom: 8px;
+    }
+
+    
+    .right_section{
+        width: 97%;
+        overflow: hidden;
+        margin: 10px;
+    }
+
+
+    
+}
+/* 
+@media (max-width: 576px) {
+    .mobile_menu{
+        position: sticky;
+        display: block;
+        width: 100%;
+        height: auto;
+    
+        bottom: 0;
+        left: 0;
+    }
+
+    .mobile_menu .list-group{
+        display: flex;
+        flex-direction: row;
+        max-height: 200px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .list-group-item{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 1px;text-align: center;
+    }
+
+    .right_section{
+        margin-bottom: 10px;
+    }
+    
+} */
