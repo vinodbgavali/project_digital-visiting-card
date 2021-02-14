@@ -87,7 +87,7 @@ body{
     
     height: auto;
     padding: 0;
-    transition: margin-left .5s;
+    transition: all 0.5s;
     
 }
 
@@ -192,17 +192,18 @@ position: relative;
     
   .left_section .left_section_bottom{
 
-    width: 120px;
+        width: 80px;
       position: absolute; 
       margin-top: 10px;
-      left: -150px;
+      left: -80px;
+      padding: 0;
      
     }
 
     .profile_menu{
         height: calc(100vh - 110px);
         position: relative;
-        width: 100px;
+   
        
       
      
@@ -210,6 +211,7 @@ position: relative;
 
     .list-group{
         height: calc(100vh - 110px);
+    
       
      
     }
@@ -222,15 +224,14 @@ position: relative;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10px;
-        margin: 1px;text-align: center;
+        padding: 0;
+       
+        margin: 1px;
+        text-align: center;
      
     }
 
-    .list-group-item i{
-        padding-bottom: 8px;
-    }
-
+    
     
     .right_section{
         width: 97%;

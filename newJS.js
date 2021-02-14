@@ -5,7 +5,7 @@ const toggleMenu = () =>{
 
 
     if(toggleFlag){
-       menu.style.left = "-150px";
+       menu.style.left = "-80px";
        rightSection.style.marginLeft = "10px";
        rightSection.style.width = "97%";
         console.log(rightSection);
@@ -13,7 +13,7 @@ const toggleMenu = () =>{
     }
     else{
         menu.style.left= "10px";
-        rightSection.style.marginLeft = "140px";
+        rightSection.style.marginLeft = "100px";
         rightSection.style.width = "80%";
         console.log(rightSection);
         toggleFlag = 1;
