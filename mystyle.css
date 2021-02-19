@@ -28,9 +28,9 @@ hr{
 }
 .left_section{
   
-  
+    
     border-radius: 10px;
-    position: -webkit-sticky;
+   
   
  }
  .left_section_box{
@@ -38,6 +38,10 @@ hr{
   
     height: 98vh;
     border-radius: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    width: auto;
  }
 
 
@@ -110,21 +114,21 @@ hr{
     margin-top: 10px;
     padding: 10px;
     border-radius: 10px;
-    transition: .5s;
+    transition: 0.5s;
     background-color: white;
     z-index: 2;
 }
 
 .right_section{
-    
-    height: auto;
+
+  
     transition: all 0.5s;
     padding: 0;
     
 }
 
 .tab-content{
-    min-height: auto;
+    min-height: 98vh;
     /* height: 98vh; */
     padding: 20px;
     /* width: 100%; */
@@ -359,9 +363,11 @@ position: relative;
 .img_column {
     float: left;
     width: 25%;
-    padding: 10px;
+    padding: 5px;
+ 
     
 }
+
   
   /* Style the images inside the grid */
   .img_column img {
@@ -377,10 +383,7 @@ position: relative;
     opacity: 1;
   }
   
-  /* Clear floats after the columns */
-  
-  
-  /* The expanding image container */
+
   .img_container {
   
     padding: 10px;
@@ -398,19 +401,90 @@ position: relative;
       
   }
 
-  
-  /* Expanding image text */
-  
-  
-  /* Closable button inside the expanded image */
-  .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
+  .youtube_card{
+      margin: 10px;
+      padding: 10px;
+      min-height: auto;
+
+      border-radius: 10px;
+      -webkit-box-shadow: 1px 1px 5px 1px #766df4; 
+    box-shadow: 1px 1px 5px 1px #766df4;
   }
+
+
+/* products */
+
+
+.product_card{
+
+    padding: 10px;
+    border: 1px solid;
+
+    -webkit-box-shadow: 1px 1px 5px 1px #0F0F0F; 
+    box-shadow: 1px 1px 5px 1px #0F0F0F;
+    border-radius: 10px;
+    position: relative;
+}
+
+.product_image img{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.product_info{
+    text-align: left;
+}
+
+.offer_tag{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    padding: 10px;
+    
+}
+.offer_tag span {
+    background-color: #ed3939;
+    padding: 0 10px;-webkit-border-top-left-radius: 20px;
+    -webkit-border-bottom-left-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+}
+
+
+.new_amount{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.old_amount{
+    font-size: 15px;
+    font-weight: 200;
+    padding-left: 10px;
+}
+
+
+/* services */
+
+.service_card{
+
+    padding: 20px;
+    border: 1px solid;
+
+    -webkit-box-shadow: 1px 1px 5px 1px #0F0F0F; 
+    box-shadow: 1px 1px 5px 1px #0F0F0F;
+    border-radius: 10px;
+    position: relative;
+ 
+}
+
+.service_card i{
+    margin: 10px;
+}
 
 /* responsive - media query */
 
@@ -437,7 +511,7 @@ position: relative;
     }
 
     .left_section_box{
-        max-height: 15vh;
+        max-height: 10vh;
     }
 
     .left_section_top{
@@ -454,8 +528,8 @@ position: relative;
 
 
     .profile_img{
-        max-width: 100px;
-        max-height: 100px;
+        max-width: 90px;
+        max-height: 90px;
         overflow-x: hidden;
         margin: 0 10px;
         background-size: cover;

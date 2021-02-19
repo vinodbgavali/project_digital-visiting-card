@@ -13,9 +13,9 @@ const toggleMenu = () =>{
         toggleFlag = 0;
     }
     else{
-        menu.style.left= "10px";
-        rightSection.style.marginLeft = "105px";
-    var scrSize = screen.width-100;
+        menu.style.left= "0px";
+        rightSection.style.marginLeft = "110px";
+    var scrSize = screen.width-110;
     rightSection.style.width =  scrSize+"px";
         
         toggleFlag = 1;
@@ -103,12 +103,12 @@ function isEmail(email) {
 
 
 
+// gallery display image in banner  
 
-
-function myFunction(imgs) {
+function expandImage(imgs) {
     var expandImg = document.getElementById("expandedImg");
-    var imgText = document.getElementById("imgtext");
+
     expandImg.src = imgs.src;
   
-    expandImg.parentElement.style.display = "block";
+ 
   }

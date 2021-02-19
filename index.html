@@ -61,29 +61,32 @@
 
                                 <a class="list-group-item list-group-item-action" id="list-gallery-list"
                                     data-bs-toggle="list" href="#list-gallery" role="tab" aria-controls="gallery">
-                                    <i class="fas fa-money-bill-wave"></i>Gallery
+                                    <i class="fas fa-images"></i>
+                                    Gallery
                                 </a>
                                 <hr>
 
                                 <a class="list-group-item list-group-item-action" id="list-contact-list"
                                     data-bs-toggle="list" href="#list-contact" role="tab" aria-controls="contact">
-                                    <i class="fas fa-images"></i>Contact Us</a>
+                                    <i class="fas fa-address-book"></i>
+                                    Contact Us</a>
                                 <hr>
 
                                 <a class="list-group-item list-group-item-action" id="list-services-list"
                                     data-bs-toggle="list" href="#list-services" role="tab" aria-controls="services">
-                                    <i class="fas fa-address-card"></i>Services
+                                    <i class="fas fa-briefcase"></i>Services
                                 </a>
                                 <hr>
 
                                 <a class="list-group-item list-group-item-action" id="list-products-list"
                                     data-bs-toggle="list" href="#list-products" role="tab" aria-controls="products">
-                                    <i class="fas fa-briefcase"></i>Products</a>
+
+                                    <i class="fab fa-product-hunt"></i>Products</a>
                                 <hr>
 
                                 <a class="list-group-item list-group-item-action" id="list-payment-list"
                                     data-bs-toggle="list" href="#list-payment" role="tab" aria-controls="payment">
-                                    <i class="fab fa-product-hunt"></i>Payment options</a>
+                                    <i class="fad fa-wallet"></i>Payment options</a>
 
 
 
@@ -334,46 +337,94 @@
 
 
                     <div class="tab-pane fade" id="list-gallery" role="tabpanel" aria-labelledby="list-gallery-list">
+                        <div class="gallery_section">
 
-                        <h2>Gallery</h2>
 
-                        <hr>
-                        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolorum at magnam rerum
-                            cumque voluptatem itaque, recusandae sint porro voluptatibus.</h5>
-                        <hr>
-                        <!-- The four columns -->
-                        <div class="img_container">
+                            <h2>Gallery</h2>
 
-                            <img id="expandedImg" style="width:100%" src="./Images/img1.jpg">
-                            <div id="imgtext"></div>
+                            <hr>
+                            <span class="p-2 d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+                                dolorum at magnam rerum
+                                cumque voluptatem itaque, recusandae sint porro voluptatibus.</span>
+
+                            <!-- The four columns -->
+                            <div class="img_container">
+
+                                <img id="expandedImg" style="width:100%" src="./Images/img1.jpg">
+                                <div id="imgtext"></div>
+                            </div>
+                            <hr>
+                            <div class="row px-5 pt-2">
+                                <div class="img_column ">
+                                    <img src="./Images/img1.jpg" alt="" style="width:100%" onclick="expandImage(this);">
+                                </div>
+                                <div class="img_column">
+                                    <img src="./Images/img2.jpg" alt="" style="width:100%" onclick="expandImage(this);">
+                                </div>
+                                <div class="img_column">
+                                    <img src="./Images/img3.jpg" alt="" style="width:100%" onclick="expandImage(this);">
+                                </div>
+                                <div class="img_column">
+                                    <img src="./Images/img4.jpg" alt="" style="width:100%" onclick="expandImage(this);">
+                                </div>
+                                <div class="img_column">
+                                    <img src="./Images/img5.jpg" alt="" style="width:100%" onclick="expandImage(this);">
+                                </div>
+                                <div class="img_column">
+                                    <img src="./Images/img6.jpg" alt="" style="width:100%" onclick="expandImage(this);">
+                                </div>
+                                <div class="img_column">
+                                    <img src="./Images/img4.jpg" alt="" style="width:100%" onclick="expandImage(this);">
+                                </div>
+                                <div class="img_column">
+                                    <img src="./Images/img6.jpg" alt="" style="width:100%" onclick="expandImage(this);">
+                                </div>
+
+
+                            </div>
                         </div>
-                        <hr>
-                        <div class="row px-2">
-                            <div class="img_column ">
-                                <img src="./Images/img1.jpg" alt="" style="width:100%" onclick="myFunction(this);">
-                            </div>
-                            <div class="img_column">
-                                <img src="./Images/img2.jpg" alt="" style="width:100%" onclick="myFunction(this);">
-                            </div>
-                            <div class="img_column">
-                                <img src="./Images/img3.jpg" alt="" style="width:100%" onclick="myFunction(this);">
-                            </div>
-                            <div class="img_column">
-                                <img src="./Images/img4.jpg" alt="" style="width:100%" onclick="myFunction(this);">
-                            </div>
-                            <div class="img_column">
-                                <img src="./Images/img5.jpg" alt="" style="width:100%" onclick="myFunction(this);">
-                            </div>
-                            <div class="img_column">
-                                <img src="./Images/img6.jpg" alt="" style="width:100%" onclick="myFunction(this);">
-                            </div>
-                            <div class="img_column">
-                                <img src="./Images/profile1.jpg" alt="" style="width:100%" onclick="myFunction(this);">
-                            </div>
-                            <div class="img_column">
-                                <img src="./Images/img6.jpg" alt="" style="width:100%" onclick="myFunction(this);">
-                            </div>
+                        <div class="youtube_section mt-4">
+                            <h2>Youtube</h2>
+                            <hr>
+                            <div class="row p-2">
+                                <div class=" col-md-6 ">
+                                    <div class="youtube_card">
+                                        <iframe width="100%" height="250"
+                                            src="https://www.youtube.com/embed/fBV2VUoFLgg" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
 
+                                <div class=" col-md-6 ">
+                                    <div class="youtube_card">
+                                        <iframe width="100%" height="250"
+                                            src="https://www.youtube.com/embed/fBV2VUoFLgg" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+
+                                <div class=" col-md-6 ">
+                                    <div class="youtube_card">
+                                        <iframe width="100%" height="250"
+                                            src="https://www.youtube.com/embed/fBV2VUoFLgg" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+
+                                <div class=" col-md-6 ">
+                                    <div class="youtube_card">
+                                        <iframe width="100%" height="250"
+                                            src="https://www.youtube.com/embed/fBV2VUoFLgg" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                </div>
+
+
+                            </div>
                         </div>
 
 
@@ -545,8 +596,80 @@
                     <div class="tab-pane fade" id="list-services" role="tabpanel" aria-labelledby="list-services-list">
                         <h3>Services</h3>
                         <hr>
-                        <div class="services_info mb-5">
+                        <div class="row">
+                            <!-- <div class="col-sm-6 mt-2">
+                                <div class="product_card text-center">
+                                    <div class="product_image mb-2">
+                                        <img src="./Images/product1.jpg" alt="">
+                                         <i class="fas fa-code fa-5x"></i> 
+                                    </div>
+                                    <div class="product_header">
+                                        <h5>Website Design</h5>
+                                    </div>
 
+                                    <div class="product_info">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="product_btn">
+                                        <button class="btn btn-primary">Enquiry</button>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <div class="col-lg-4 col-sm-6 my-2">
+                                <div class="service_card text-center">
+                                    <i class="fad fa-palette fa-3x"></i>
+                                    <h5>Web Design </h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-primary">Enquiry</button>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6 my-2">
+                                <div class="service_card text-center">
+                                    <i class="fad fa-bullhorn fa-3x"></i>
+                                    <h5>Branding</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-primary">Enquiry</button>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6 my-2 ">
+                                <div class="service_card text-center">
+                                    <i class="fad fa-laptop-code fa-3x"></i>
+                                    <h5>Development</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-primary">Enquiry</button>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6 my-2">
+                                <div class="service_card text-center">
+                                    <i class="fad fa-lightbulb fa-3x"></i>
+                                    <h5>Strategy</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-primary">Enquiry</button>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6 my-2">
+                                <div class="service_card text-center">
+                                    <i class="fad fa-share-alt fa-3x"></i>
+                                    <h5>Social Media</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-primary">Enquiry</button>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-sm-6 my-2">
+                                <div class="service_card text-center">
+                                    <!-- <img src="./Images/product1.jpg" alt="" class="mb-2"> -->
+                                    <i class="fad fa-shopping-cart fa-3x"></i>
+                                    <h5>Ecommerce</h5>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <button class="btn btn-primary">Enquiry</button>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -554,11 +677,108 @@
                     <div class="tab-pane fade" id="list-products" role="tabpanel" aria-labelledby="list-products-list">
                         <h3>Products</h3>
                         <hr>
-                        <div class="products_info mb-5">
+                        <p>We build, test, launch and enhance top-notch
+                            complex web and mobile applications.</p>
 
+                        <div class="row">
+                            <div class="col-sm-6 my-2">
+                                <div class="product_card">
+                                    <div class="product_image mb-2">
+                                        <img src="./Images/product1.jpg" alt="">
+                                        <!-- <i class="fas fa-code fa-5x"></i> -->
+                                    </div>
+                                    <div class="product_header">
+                                        <h5>Website Design</h5>
+                                    </div>
+                                    <div class="offer_tag">
+                                        <span>25% off</span>
+                                    </div>
+                                    <div class="product_info">
+                                        <span id="new_amount" class="new_amount">1500 <span>&#x20B9;</span></span>
+                                        <span id="old_amount" class="old_amount"><s>2000
+                                                <span>&#x20B9;</s></span></span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="product_btn">
+                                        <button class="btn btn-primary">Enquiry</button>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="col-sm-6 my-2">
+                                <div class="product_card">
+                                    <div class="product_image mb-2">
+                                        <img src="./Images/product1.jpg" alt="">
+                                        <!-- <i class="fas fa-code fa-5x"></i> -->
+                                    </div>
+                                    <div class="product_header">
+                                        <h5>Website Design</h5>
+                                    </div>
+                                    <div class="offer_tag">
+                                        <span>25% off</span>
+                                    </div>
+                                    <div class="product_info">
+                                        <span id="new_amount" class="new_amount">1500 <span>&#x20B9;</span></span>
+                                        <span id="old_amount" class="old_amount"><s>2000
+                                                <span>&#x20B9;</s></span></span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="product_btn">
+                                        <button class="btn btn-primary">Enquiry</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 my-2">
+                                <div class="product_card">
+                                    <div class="product_image mb-2">
+                                        <img src="./Images/product1.jpg" alt="">
+                                        <!-- <i class="fas fa-code fa-5x"></i> -->
+                                    </div>
+                                    <div class="product_header">
+                                        <h5>Website Design</h5>
+                                    </div>
+                                    <div class="offer_tag">
+                                        <span>25% off</span>
+                                    </div>
+                                    <div class="product_info">
+                                        <span id="new_amount" class="new_amount">1500 <span>&#x20B9;</span></span>
+                                        <span id="old_amount" class="old_amount"><s>2000
+                                                <span>&#x20B9;</s></span></span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="product_btn">
+                                        <button class="btn btn-primary">Enquiry</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 my-2">
+                                <div class="product_card">
+                                    <div class="product_image mb-2">
+                                        <img src="./Images/product1.jpg" alt="">
+                                        <!-- <i class="fas fa-code fa-5x"></i> -->
+                                    </div>
+                                    <div class="product_header">
+                                        <h5>Website Design</h5>
+                                    </div>
+                                    <div class="offer_tag">
+                                        <span>25% off</span>
+                                    </div>
+                                    <div class="product_info">
+                                        <span id="new_amount" class="new_amount">1500 <span>&#x20B9;</span></span>
+                                        <span id="old_amount" class="old_amount"><s>2000
+                                                <span>&#x20B9;</s></span></span>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="product_btn">
+                                        <button class="btn btn-primary">Enquiry</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
 
                     <div class="tab-pane fade" id="list-payment" role="tabpanel" aria-labelledby="list-payment-list">
                         <h3>payment</h3>
