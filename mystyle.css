@@ -7,6 +7,7 @@
 
 body{
     margin: 10px;
+
     background: linear-gradient(to right, #766df4 0%, #766df4 30%, #6a9bf4 100%) !important;
   
     /* background: linear-gradient(
@@ -19,8 +20,21 @@ a{
     color: black;
 }
 
+ul{
+    padding-left: 0;
+}
+
 hr{
     margin: 5px 0;
+}
+
+.payment_header{
+    width: 100%;
+    background-color: #766df4;
+    color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 
 .main_section {
@@ -42,6 +56,8 @@ hr{
     position: sticky;
     top: 10px;
     width: auto;
+    -webkit-box-shadow: 1px 1px 5px 1px #0F0F0F; 
+    box-shadow: 1px 1px 5px 1px #0F0F0F;
  }
 
 
@@ -82,11 +98,14 @@ hr{
 .list-group-item{
     border: 0;
     border-radius: .25rem;
+   
 }
 
 .list-group-item:hover{
     background-color: #766df4 !important;  
     color: white;
+    transform: scale(1.05);
+    transition-duration: .3s;
 }
 
 .list-group .active {
@@ -128,12 +147,15 @@ hr{
 }
 
 .tab-content{
+    
     min-height: 98vh;
     /* height: 98vh; */
     padding: 20px;
     /* width: 100%; */
     background-color: white;
     border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 5px 1px #0F0F0F; 
+    box-shadow: 1px 1px 5px 1px #0F0F0F;
 
 }
 
@@ -178,11 +200,7 @@ position: relative;
 }
 
 
-/* 
-.profile_card .row a{
- background-color: red;
- border-radius: 10px;
-} */
+
 
 
 
@@ -195,6 +213,7 @@ position: relative;
 .profile_card a{
     display: block;
     border-radius:10px ;
+    transition: linear 0.3s;
 
 }
 
@@ -204,45 +223,110 @@ position: relative;
     display: block;
 }
 
-.profile_card a:hover{
+ .profile_card:hover{
         background-color: rgb(118, 109, 244) !important;
         color: white;
         border-radius: 10px;
+        transition: linear 0.3s;
     
+} 
+
+.profile_card:hover a{
+    color: white;
+    font-size: 1.1rem;
+}
+
+.profile_card:hover h6{
+    color: white;
+    font-size: 1.1rem;
 }
 
 
 
-.contact_social{
-    display: flex;
-    justify-content: space-around;
+
+
+/* socil media button */
+
+ul.social-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  ul.social-buttons li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  ul.social-buttons li a {
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 60px;
+    color: white;
+    -webkit-box-shadow: 1px 1px 5px 1px #0F0F0F; 
+    box-shadow: 1px 1px 5px 1px #0F0F0F;
+    background-color: white;
+  }
+  
+
+ul.social-buttons li a.icon_facebook {
+    color: #4267B2;
 }
 
+ul.social-buttons li a.icon_instagram {
+  color: #E1306C;
+}
+
+ul.social-buttons li a.icon_twitter {
+   color: #1DA1F2;
+}
+
+ul.social-buttons li a.icon_linkedin {
+ color: #2867B2;
+}
+
+ul.social-buttons li a.icon_youtube {
+ color: red;
+}
+  
+
+  ul.social-buttons li a {
+    transition: transform 0.2s linear;
+  }
+  
+  ul.social-buttons li:hover a {
+    transform: translateY(-10px);
+  }
+  
 
 
 /* Contact_Us */
 
-
 .form_group{
-    height: auto;
     display: flex;
     text-align: left;
+    flex-direction: column ;
+    justify-content: center;
     position: relative;
-    overflow: hidden;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
+.form_group label{
+    font-size: 20px;
+    font-weight: 400;
 
+}
 
 .form_group input,textarea{
-    width: 100%;
     padding: 5px 10px;
     height: auto;
     border-radius: 5px;
     outline: none;
     border: 2px solid #ced4da;
     resize: none;
-    margin-bottom: 25px;
 }
 
 
@@ -255,23 +339,22 @@ position: relative;
 
 .form_group.error input, .form_group.error textarea{
     border-color:  #FF3E0B;
-
 }
 
 
 
 .form_group span{
     position: absolute;
-    bottom: 0;
-    left: 20px;
+    bottom: -25px;
+    left: 10px;
     color:  #FF3E0B;
     display: none;
 }
 
 .form_group i{
     position: absolute;
-    right: 20px;
-    top: 10px;
+    right: 10px;
+    top: 40px;
     color: #2ecc71;
     display: none;    
 }
@@ -300,6 +383,9 @@ position: relative;
     display: block;
     
 }
+
+
+
 
 /* About us */
 
@@ -377,10 +463,15 @@ position: relative;
     border-radius: 10px;
     -webkit-box-shadow: 1px 1px 5px 1px #766df4; 
     box-shadow: 1px 1px 5px 1px #766df4;
+ 
   }
   
   .img_column img:hover {
     opacity: 1;
+    
+    transform: scale(1.05);
+    transition-duration: .3s;
+    
   }
   
 
@@ -424,6 +515,13 @@ position: relative;
     box-shadow: 1px 1px 5px 1px #0F0F0F;
     border-radius: 10px;
     position: relative;
+}
+
+.product_card:hover{
+
+    transform: scale(1.02);
+    transition-duration: .5s;
+ 
 }
 
 .product_image img{
@@ -482,6 +580,13 @@ position: relative;
  
 }
 
+.service_card:hover{
+
+    transform: scale(1.05);
+    transition-duration: .3s;
+ 
+}
+
 .service_card i{
     margin: 10px;
 }
@@ -502,6 +607,47 @@ position: relative;
     }
     
 } */
+/* payment */
+
+.payment_card{
+
+    padding: 20px;
+    border: 1px solid;
+
+    -webkit-box-shadow: 1px 1px 5px 1px #0F0F0F; 
+    box-shadow: 1px 1px 5px 1px #0F0F0F;
+    border-radius: 10px;
+    position: relative;
+ 
+}
+
+
+.bank_details{
+    border:1px solid;
+    padding: 10px;
+    margin: 10px;
+   
+ 
+}
+
+.bank_logo img{
+    max-width: 80%;
+    height: 60px;
+}
+
+.paytm_scan{
+    width: auto;
+    height: auto;
+}
+
+
+
+
+.card_border{
+    -webkit-box-shadow: 1px 1px 5px 1px #0F0F0F; 
+    box-shadow: 1px 1px 5px 1px #0F0F0F;
+    border-radius: 10px;
+}
 
 @media (max-width: 767px) {
 
@@ -511,7 +657,7 @@ position: relative;
     }
 
     .left_section_box{
-        max-height: 10vh;
+        max-height: 15vh;
     }
 
     .left_section_top{
@@ -600,7 +746,9 @@ position: relative;
       .img_container img{
         height: 200px;
 
-  
-        
+    }
+
+    #profile_header_tag{
+        display: none;
     }
 } 

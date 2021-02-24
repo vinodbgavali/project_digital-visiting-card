@@ -2,27 +2,52 @@ toggleFlag = 0;
 const toggleMenu = () =>{
     const menu = document.querySelector(".left_section_bottom");
     const rightSection = document.querySelector(".right_section");
+    const toggler = document.querySelector(".navbar-toggler");
+    const togglerIcon = toggler.querySelector("i");
+
+    // clear the form after error and coming back to contact us page
+
+    // const form_group = document.querySelectorAll(".form_group");
+    // form_group.forEach(e => {
+    //     e.classList = "form_group";
+    //     console.log(e);
+    // });
+    // end-  clear the form after error and coming back to contact us page
 
 
-    if(toggleFlag){
-       menu.style.left = "-125px";
-       rightSection.style.marginLeft = "0";
-       var scrSize = screen.width+100;
-        rightSection.style.width =  scrSize+"px";
-        console.log(rightSection);
-        toggleFlag = 0;
+
+
+
+    if(screen.width<768){
+        if(toggleFlag){
+            menu.style.left = "-125px";
+            rightSection.style.marginLeft = "0";
+            var scrSize = screen.width+100;
+                rightSection.style.width =  scrSize+"px";
+                togglerIcon.classList = "fas fa-bars fa-2x";
+                console.log(togglerIcon);
+                toggleFlag = 0;
+        }
+        else{
+                menu.style.left= "0px";
+                rightSection.style.marginLeft = "110px";
+            var scrSize = screen.width-110;
+            rightSection.style.width =  scrSize+"px";
+            togglerIcon.classList = "fas fa-times fa-2x";
+            console.log(togglerIcon);
+                toggleFlag = 1;
+        }
     }
-    else{
-        menu.style.left= "0px";
-        rightSection.style.marginLeft = "110px";
-    var scrSize = screen.width-110;
-    rightSection.style.width =  scrSize+"px";
-        
-        toggleFlag = 1;
-    }
-
 }
 
+
+function myFunction() {
+    document.getElementById("newform").reset();
+    const form_group = document.querySelector('.form_group');
+    form_group.className = "form_group col-sm-9";
+    console.log(formGroup);
+
+}
 
 const form = document.querySelector('#newform');
 const fullname = document.querySelector('#name');
@@ -84,16 +109,16 @@ const checkInput = () => {
 
 
 const setError = (labelFor, errMsg) =>{
-    const form_group = labelFor.parentElement;
-    const errorSpan = form_group.querySelector('.errorMsg');
-    const icon = form_group.querySelector('.fa-exclamation-circle');
-    form_group.className = "form_group error col-sm-9";
+    const form_input = labelFor.parentElement;
+    const errorSpan = form_input.querySelector('.errorMsg');
+    const icon = form_input.querySelector('.fa-exclamation-circle');
+    form_input.className = "form_group error";
     errorSpan.innerText = errMsg;
 }
 
 const setSuccess = (labelFor) =>{
-    const form_group = labelFor.parentElement;
-    form_group.className = "form_group success col-sm-9";
+    const form_input = labelFor.parentElement;
+    form_input.className = "form_group success ";
 
 }
 
@@ -112,3 +137,15 @@ function expandImage(imgs) {
   
  
   }
+
+
+  const clearForm = () =>
+  {
+    const form_group = document.querySelectorAll(".form_group");
+    form_group.forEach(e => {
+        e.classList = "form_group";
+    });
+  }
+
+
+

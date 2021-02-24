@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Prago Infotech</title>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
                         </div>
 
                         <div class="profile_header">
-                            <h6 id="profile_header_name">Prago Infotech</h6>
+                            <h2 id="profile_header_name">Prago Infotech</h2>
                             <span id="profile_header_tag">Web Development Comapany</span>
 
                         </div>
@@ -49,43 +49,50 @@
 
                             <div class="list-group" id="list-tab" role="tablist">
                                 <a class="list-group-item list-group-item-action active" id="list-profile-list"
-                                    data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="home">
+                                    data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="home"
+                                    onclick="toggleMenu()">
                                     <i class="fas fa-user "></i>Profile</a>
                                 <hr>
 
                                 <a class="list-group-item list-group-item-action" id="list-about-list"
-                                    data-bs-toggle="list" href="#list-about" role="tab" aria-controls="about">
+                                    data-bs-toggle="list" href="#list-about" role="tab" aria-controls="about"
+                                    onclick="toggleMenu()">
                                     <i class="fas fa-address-card"></i>About
                                     Us</a>
                                 <hr>
 
                                 <a class="list-group-item list-group-item-action" id="list-gallery-list"
-                                    data-bs-toggle="list" href="#list-gallery" role="tab" aria-controls="gallery">
+                                    data-bs-toggle="list" href="#list-gallery" role="tab" aria-controls="gallery"
+                                    onclick="toggleMenu()">
                                     <i class="fas fa-images"></i>
                                     Gallery
                                 </a>
                                 <hr>
 
                                 <a class="list-group-item list-group-item-action" id="list-contact-list"
-                                    data-bs-toggle="list" href="#list-contact" role="tab" aria-controls="contact">
+                                    data-bs-toggle="list" href="#list-contact" role="tab" aria-controls="contact"
+                                    onclick="toggleMenu();clearForm()">
                                     <i class="fas fa-address-book"></i>
                                     Contact Us</a>
                                 <hr>
 
                                 <a class="list-group-item list-group-item-action" id="list-services-list"
-                                    data-bs-toggle="list" href="#list-services" role="tab" aria-controls="services">
+                                    data-bs-toggle="list" href="#list-services" role="tab" aria-controls="services"
+                                    onclick="toggleMenu()">
                                     <i class="fas fa-briefcase"></i>Services
                                 </a>
                                 <hr>
 
                                 <a class="list-group-item list-group-item-action" id="list-products-list"
-                                    data-bs-toggle="list" href="#list-products" role="tab" aria-controls="products">
+                                    data-bs-toggle="list" href="#list-products" role="tab" aria-controls="products"
+                                    onclick="toggleMenu()">
 
                                     <i class="fab fa-product-hunt"></i>Products</a>
                                 <hr>
 
                                 <a class="list-group-item list-group-item-action" id="list-payment-list"
-                                    data-bs-toggle="list" href="#list-payment" role="tab" aria-controls="payment">
+                                    data-bs-toggle="list" href="#list-payment" role="tab" aria-controls="payment"
+                                    onclick="toggleMenu()">
                                     <i class="fad fa-wallet"></i>Payment options</a>
 
 
@@ -101,18 +108,15 @@
 
             </div>
 
-
-
-
             <div class="col-xxl-6 col-xl-7 col-lg-9 col-md-8 col-sm-12 right_section ">
 
-
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active  profile_tab" id="list-profile" role="tabpanel"
+
+                    <div class=" tab-pane fade show active profile_tab" id="list-profile" role="tabpanel"
                         aria-labelledby="list-profile-list">
                         <h3>Profile</h3>
                         <hr>
-                        <div class="profile_info mb-5">
+                        <div class="profile_info  col-lg-8  ">
 
                             <div class="row  profile_card">
                                 <div class="col-sm-3 d-flex  align-items-center  ps-3">
@@ -142,8 +146,8 @@
                                     <h6 class="mb-0 ps-2">Phone</h6>
                                 </div>
                                 <div class="col-sm-9 text-secondary ">
-                                    <a href="" class="">
-                                        <span>1234567890</span> </a>
+                                    <a href="tel:9921993757" class="">
+                                        <span>9921993757</span> </a>
                                 </div>
                             </div>
 
@@ -186,31 +190,53 @@
                                     </a>
                                 </div>
                             </div>
+                            <hr>
 
-                            <div class="row profile_card">
-                                <div class="contact_social m-2  col-sm-12">
-                                    <a target="_blank" title="Facebook" href="https://www.facebook.com/">
-                                        <i class="fab fa-facebook fa-2x"></i>
-                                    </a>
-                                    <a target="_blank" title="instagram" href="https://instagram.com/"><i
-                                            class="fab fa-instagram fa-2x"></i></a>
-                                    <a target="_blank" title="Twitter" href="https://twitter.com/"><i
-                                            class="fab fa-twitter fa-2x"></i></a>
-                                    <a target="_blank" title="linkedin" href="https://linkedin.com/"><i
-                                            class="fab fa-linkedin-in fa-2x"></i></a>
-                                    <a target="_blank" title="Youtube" href="https://youtube.com/"><i
-                                            class="fab fa-youtube fa-2x"></i></a>
-                                </div>
+
+
+
+                            <div class="row text-center ">
+
+                                <ul class="social-buttons" id="demo1">
+                                    <li>
+                                        <a target="_blank" title="Youtube" href="https://youtube.com/"
+                                            class="icon_facebook">
+                                            <i class="fab fa-facebook-f "></i>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a target="_blank" title="Youtube" href="https://youtube.com/"
+                                            class="icon_instagram">
+                                            <i class="fab fa-instagram "></i>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a target="_blank" title="Twitter" href="https://twitter.com/"
+                                            class="icon_twitter">
+                                            <i class="fab fa-twitter "></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" title="linkedin" href="https://linkedin.com/"
+                                            class=" icon_linkedin"><i class="fab fa-linkedin-in "></i></a>
+                                    </li>
+                                    <li>
+                                        <a target="_blank" title="Youtube" href="https://youtube.com/"
+                                            class="icon_youtube">
+                                            <i class="fab fa-youtube "></i>
+                                        </a>
+                                    </li>
+                                </ul>
+
                             </div>
 
-
-
+                        </div>
+                        <div class="col-lg-2 share_wrapper">
+                            <h1>Share Card</h1>
                         </div>
                     </div>
-
-
-
-
 
 
                     <div class="tab-pane fade " id="list-about" role="tabpanel" aria-labelledby="list-about-list">
@@ -343,7 +369,8 @@
                             <h2>Gallery</h2>
 
                             <hr>
-                            <span class="p-2 d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere
+                            <span class="p-2 d-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Facere
                                 dolorum at magnam rerum
                                 cumque voluptatem itaque, recusandae sint porro voluptatibus.</span>
 
@@ -387,7 +414,7 @@
                             <h2>Youtube</h2>
                             <hr>
                             <div class="row p-2">
-                                <div class=" col-md-6 ">
+                                <!-- <div class=" col-md-6 ">
                                     <div class="youtube_card">
                                         <iframe width="100%" height="250"
                                             src="https://www.youtube.com/embed/fBV2VUoFLgg" frameborder="0"
@@ -421,7 +448,7 @@
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                             allowfullscreen></iframe>
                                     </div>
-                                </div>
+                                </div> -->
 
 
                             </div>
@@ -524,72 +551,82 @@
                     <div class="tab-pane fade" id="list-contact" role="tabpanel" aria-labelledby="list-contact-list">
                         <h3>Contact us</h3>
                         <hr>
-                        <div class="Contact_info mb-5">
+
+                        <div class="col-lg-6 mx-auto card_border p-3">
                             <form id="newform">
+                                <div class="form_group">
+                                    <label for="name">Name :</label>
+                                    <input type="text" name="name" value="" placeholder="Full Name" class="" id="name">
+                                    <i class="fas fa-check-circle "></i>
+                                    <i class="fas fa-exclamation-circle "></i>
+                                    <span class="errorMsg">error</span>
+                                </div>
+                                <div class="form_group">
+                                    <label for="Email">Email :</label>
+                                    <input type="text" name="email" value="" placeholder="Email" class="" id="email">
+                                    <i class="fas fa-check-circle "></i>
+                                    <i class="fas fa-exclamation-circle "></i>
+                                    <span class="errorMsg">error</span>
+                                </div>
+                                <div class="form_group">
+                                    <label for="subject">Subject :</label>
+                                    <input type="text" name="subject" value="" placeholder="Subject" id="subject"
+                                        class="">
+                                    <i class="fas fa-check-circle "></i>
+                                    <i class="fas fa-exclamation-circle "></i>
+                                    <span class="errorMsg">error</span>
+                                </div>
+                                <div class="form_group ">
+                                    <label for="message">Message :</label>
+                                    <!-- <input type="text" name="message" value="" placeholder="Message"
+                                    id="message" class="message"> -->
 
-                                <div class="form_group row">
-                                    <div class="col-sm-3 d-flex  align-items-center  ps-3">
-                                        <label for="name">Name</label>
+                                    <textarea id="message" name="message" placeholder="Your Message" rows="4"
+                                        cols="50"></textarea>
 
-                                    </div>
-                                    <div class="col-sm-9 text-secondary form_input">
-                                        <input type="text" name="name" value="" placeholder="Full Name" class=""
-                                            id="name">
-                                        <i class="fas fa-check-circle "></i>
-                                        <i class="fas fa-exclamation-circle "></i>
-                                        <span class="errorMsg">error</span>
-                                    </div>
+                                    <i class="fas fa-check-circle "></i>
+                                    <i class="fas fa-exclamation-circle "></i>
+                                    <span class="errorMsg">error</span>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn  btn-primary mt-2 me-2">Submit</button>
+                                    <button type="reset" class="btn  btn-danger mt-2"
+                                        onclick="clearForm()">Reset</button>
                                 </div>
 
-                                <div class="form_group row">
-                                    <div class="col-sm-3 d-flex  align-items-center  ps-3">
-                                        <label for="name">Email</label>
-
-                                    </div>
-                                    <div class="col-sm-9 text-secondary form_input">
-                                        <input type="text" name="email" value="" placeholder="Email" class=""
-                                            id="email">
-                                        <i class="fas fa-check-circle "></i>
-                                        <i class="fas fa-exclamation-circle "></i>
-                                        <span class="errorMsg">error</span>
-                                    </div>
-                                </div>
-
-
-                                <div class="form_group row">
-                                    <div class="col-sm-3 d-flex  align-items-center  ps-3">
-                                        <label for="subject">Subject</label>
-
-                                    </div>
-                                    <div class="col-sm-9 text-secondary form_input">
-                                        <input type="text" name="subject" value="" placeholder="Subject" id="subject"
-                                            class="">
-                                        <i class="fas fa-check-circle "></i>
-                                        <i class="fas fa-exclamation-circle "></i>
-                                        <span class="errorMsg">error</span>
-                                    </div>
-                                </div>
-
-                                <div class="form_group row">
-                                    <div class="col-sm-3 d-flex  align-items-center  ps-3">
-                                        <label for="message">Message</label>
-
-                                    </div>
-                                    <div class="col-sm-9 text-secondary form_input">
-                                        <textarea id="message" name="message" placeholder="Your Message" rows="3"
-                                            cols="50"></textarea>
-
-                                        <i class="fas fa-check-circle "></i>
-                                        <i class="fas fa-exclamation-circle "></i>
-                                        <span class="errorMsg">error</span>
-                                    </div>
-                                </div>
-
-
-
-                                <button type="submit" class="btn  btn-primary mt-2">Submit</button>
                             </form>
+                        </div>
+                        <div>
+                            <ul class="social-buttons" id="demo1">
+                                <li>
+                                    <a target="_blank" title="Youtube" href="https://youtube.com/"
+                                        class="icon_facebook">
+                                        <i class="fab fa-facebook-f "></i>
+                                    </a>
+                                </li>
 
+                                <li>
+                                    <a target="_blank" title="Youtube" href="https://youtube.com/"
+                                        class="icon_instagram">
+                                        <i class="fab fa-instagram "></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a target="_blank" title="Twitter" href="https://twitter.com/" class="icon_twitter">
+                                        <i class="fab fa-twitter "></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a target="_blank" title="linkedin" href="https://linkedin.com/"
+                                        class=" icon_linkedin"><i class="fab fa-linkedin-in "></i></a>
+                                </li>
+                                <li>
+                                    <a target="_blank" title="Youtube" href="https://youtube.com/" class="icon_youtube">
+                                        <i class="fab fa-youtube "></i>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
@@ -597,25 +634,6 @@
                         <h3>Services</h3>
                         <hr>
                         <div class="row">
-                            <!-- <div class="col-sm-6 mt-2">
-                                <div class="product_card text-center">
-                                    <div class="product_image mb-2">
-                                        <img src="./Images/product1.jpg" alt="">
-                                         <i class="fas fa-code fa-5x"></i> 
-                                    </div>
-                                    <div class="product_header">
-                                        <h5>Website Design</h5>
-                                    </div>
-
-                                    <div class="product_info">
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
-                                    <div class="product_btn">
-                                        <button class="btn btn-primary">Enquiry</button>
-                                    </div>
-                                </div>
-                            </div> -->
-
                             <div class="col-lg-4 col-sm-6 my-2">
                                 <div class="service_card text-center">
                                     <i class="fad fa-palette fa-3x"></i>
@@ -781,23 +799,56 @@
 
 
                     <div class="tab-pane fade" id="list-payment" role="tabpanel" aria-labelledby="list-payment-list">
-                        <h3>payment</h3>
+                        <h3>Payment Options</h3>
                         <hr>
-                        <div class="payment_info mb-5">
 
+                        <div class="row m-2">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae
+                                reprehenderit
+                                laboriosam a nulla, culpa quaerat tempora nisi animi hic?</p>
+
+                            <h4 class="payment_header">Bank Details</h4>
+                            <div class="col-md-6 my-2">
+                                <div class="payment_card text-center">
+                                    <div class="bank_logo">
+                                        <img src="./Images/HDFC_Bank_logo.png" alt="">
+                                    </div>
+                                    <h5>Bank Name : <span id="bank_name">Bank of Baroda</span></h5>
+                                    <h5>Account Number : <span id="bank_name">1234567890</span></h5>
+                                    <h5>IFSC Code : <span id="bank_name">BOB0100005</span></h5>
+                                    <h5>Branch : <span id="bank_name">Pune</span></h5>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 my-2">
+                                <div class="payment_card ">
+                                    <div class="bank_logo">
+                                        <img src="./Images/Bank_of_Baroda_logo.png" alt="">
+                                    </div>
+                                    <h5>Bank Name : <span id="bank_name">Bank of Baroda</span></h5>
+                                    <h5>Account Number : <span id="bank_name">1234567890</span></h5>
+                                    <h5>IFSC Code : <span id="bank_name">BOB0100005</span></h5>
+                                    <h5>Branch : <span id="bank_name">Pune</span></h5>
+                                </div>
+                            </div>
+
+                            <h4 class="my-2 payment_header">Wallets And UPI</h4>
+                            <div class=" my-2 text-center">
+                                <div class="payment_card">
+
+                                    <div class="paytm_scan">
+                                        <img src="./Images/paytm_scan.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+
+
+                            </div>
 
                         </div>
                     </div>
                 </div>
-
-
-
-
             </div>
-
         </div>
-
-
     </div>
 
     <!-- <div class="mobile_menu">
