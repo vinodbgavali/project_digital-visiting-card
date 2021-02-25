@@ -140,11 +140,13 @@ hr{
 
 .right_section{
 
-  
+    
     transition: all 0.5s;
-    padding: 0;
+   
     
 }
+
+
 
 .tab-content{
     
@@ -649,6 +651,13 @@ ul.social-buttons li a.icon_youtube {
     border-radius: 10px;
 }
 
+
+
+.share_wrapper{
+    padding: 10px;
+    background-color: red;
+}
+
 @media (max-width: 767px) {
 
     .main_section{
@@ -728,13 +737,15 @@ ul.social-buttons li a.icon_youtube {
 
     .div_seperator{display: none;}
 
-
+    .right_wrapper{
+        margin:0 5px;
+    }
     
 }
 
 @media (max-width: 576px) {
    
-  
+    
       /* Style the images inside the grid */
       .img_column img {
 
