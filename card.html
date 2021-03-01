@@ -22,7 +22,7 @@
     <div class="card_wrapper mx-auto">
         <div class="card_section ">
             <div class="card_image">
-                <img src="./Images/guy.jpg" alt="">
+                <img src="./Images/logo-social.png" alt="">
             </div>
             <div class="card_header ps-4 d-flex justify-content-between align-items-center">
                 <div class="card_info">
@@ -34,7 +34,7 @@
             </div>
             <hr>
 
-            <div class="contact_info px-4">
+            <div class="contact_info">
                 <div class="contact_info_box align-items-center">
                     <a href="" class="d-flex align-items-center">
                         <i class="fas fa-phone-alt "></i>
@@ -71,25 +71,25 @@
                 <h5>Check me on:</h5>
                 <ul class="social-buttons">
                     <li>
-                        <a target="_blank" title="Youtube" href="https://youtube.com/" class="icon_whatsApp">
+                        <a target="_blank" title="Whatsapp" href="https://youtube.com/" class="icon_whatsApp">
                             <i class="fab fa-whatsapp"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a target="_blank" title="Youtube" href="https://youtube.com/" class="icon_telegram">
+                        <a target="_blank" title="Telegram" href="https://youtube.com/" class="icon_telegram">
                             <i class="fab fa-telegram-plane"></i>
                         </a>
                     </li>
 
                     <li>
-                        <a target="_blank" title="Youtube" href="https://youtube.com/" class="icon_facebook">
+                        <a target="_blank" title="Facebook" href="https://youtube.com/" class="icon_facebook">
                             <i class="fab fa-facebook-f "></i>
                         </a>
                     </li>
 
                     <li>
-                        <a target="_blank" title="Youtube" href="https://youtube.com/" class="icon_instagram">
+                        <a target="_blank" title="Instagram" href="https://youtube.com/" class="icon_instagram">
                             <i class="fab fa-instagram "></i>
                         </a>
                     </li>
@@ -109,15 +109,20 @@
                         </a>
                     </li>
                 </ul>
+
+
             </div>
 
 
-            <div class="share_section text-center">
-                <button class="btn_share "><i class="fas fa-share-alt pe-2"> </i>Share Card</button>
+            <div class="share_section text-center ">
+                <!-- <button class="btn_share " onclick="shareButton()"><i class="fas fa-share-alt pe-2"> </i>Share
+                    Card</button> -->
+                <button type="button" class="btn btn_share " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fas fa-share-alt pe-2"> </i>Share
+                    Card
 
-                <div class="share_screen text-center">
-                    hi there
-                </div>
+                </button>
+
             </div>
 
 
@@ -146,15 +151,117 @@
                         </a>
                     </li>
                 </ul> -->
+
+
+
+
+
+
+            <!-- <div class="share_screen text-center">
+                <div class="shareForm">
+
+                </div>
+
+                Share Card
+                <button class="btn_close " onclick="shareButton()"><i class="fas fa-share-alt pe-2">
+                    </i>Close</button> -->
+
+
         </div>
 
 
 
-
-    </div>
     </div>
 
 
+
+
+
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog mx-auto modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Share Card</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="share_input mb-2">
+                        <input type="text" name="whatsapp" value="" id="whatsppNumber">
+                        <a href="" class="whatsppBtn">
+                            <i class="fab fa-whatsapp"></i>
+                            Whatsapp</a>
+                    </div>
+
+
+                    <div class="share_link">
+                        <h4>Link</h4>
+                        <ul class="share_social">
+
+
+
+
+                            <li>
+                                <a target="_blank" title="Facebook"
+                                    href="https://www.facebook.com/sharer/sharer.php?u=https://www.pragoinfotech.com/"
+                                    class="icon_facebook">
+                                    <i class="fab fa-facebook-f "></i>
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a target="_blank" title="Twitter"
+                                    href="https://twitter.com/intent/tweet?url=https://www.pragoinfotech.com/&text="
+                                    class="icon_twitter">
+                                    <i class="fab fa-twitter "></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="linkedin"
+                                    href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.pragoinfotech.com/"
+                                    class=" icon_linkedin"><i class="fab fa-linkedin-in "></i></a>
+                            </li>
+
+
+                            <li>
+                                <a target="_blank" title="Telegram" href="https://youtube.com/" class="icon_telegram">
+                                    <i class="fab fa-telegram-plane"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a target="_blank" title="EMail"
+                                    href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://www.pragoinfotech.com/%0A"
+                                    class=" icon_default"><i class="far fa-envelope"></i></a>
+                            </li>
+
+                            <li>
+                                <a target="_blank" title="Message" href="sms://&body=https://www.pragoinfotech.com"
+                                    class=" icon_default"><i class="far fa-comment-alt-lines"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+
+
+
+
+                </div>
+                <div class=" modal-footer">
+                    <button type="button" class="btn btn_close" data-bs-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -163,6 +270,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+
+    <script src="./cardJs.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

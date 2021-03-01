@@ -6,27 +6,40 @@
 
 body{
     background-color: #766df4;
+   height: 100%;
+   
 }
 hr{
     margin: 0;
 }
 
+
+
 .card_wrapper{
     height: auto;
-    max-width: 400px;
-    min-width: 320px;
-    
+    max-width: 450px;
+    min-width: 280px;
+   
     border-radius: 10px;
     background-color: white;
-
+    
 
 }
 
 .card_section{
    border-radius: 10px;
-
+    position: relative;
+  
 
 }
+
+.card_image{
+    min-height:250px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
 
 
 .card_image img{
@@ -41,6 +54,10 @@ hr{
 .card_header{
     padding: 10px;
     position: relative;
+}
+
+.contact_info{
+    padding: 0 20px;
 }
 
 .social_button{
@@ -97,7 +114,6 @@ hr{
     width: 100%;
     padding: 10px;
     border: 0;
-    z-index: 9;
     background-color: #e54343;
     color: white;
   
@@ -120,7 +136,7 @@ hr{
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-out;
-   margin: 10px;
+   margin: 5px;
 }
 
 
@@ -165,7 +181,7 @@ hr{
   
 ul.social-buttons {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 0;
   }
   
@@ -188,69 +204,77 @@ ul.social-buttons {
     transition: all 0.3s;
   }
   
-  ul.social-buttons li a.icon_whatsApp {
+  ul li a.icon_whatsApp {
     color: #128C7E;
 }
 
-ul.social-buttons li a.icon_telegram {
+ul li a.icon_telegram {
     color: #0088cc;
 }
 
   
-ul.social-buttons li a.icon_facebook {
+ul li a.icon_facebook {
     color: #4267B2;
 }
 
-ul.social-buttons li a.icon_instagram {
+ul li a.icon_instagram {
   color: #E1306C;
 }
 
-ul.social-buttons li a.icon_twitter {
+ul li a.icon_twitter {
    color: #1DA1F2;
 }
 
-ul.social-buttons li a.icon_linkedin {
+ul li a.icon_linkedin {
  color: #2867B2;
 }
 
-ul.social-buttons li a.icon_youtube {
+ul li a.icon_youtube {
  color: red;
 }
   
-
-ul.social-buttons li a.icon_whatsApp:hover {
+ul li a.icon_whatsApp:hover {
     color: #fff;
     background-color: #128C7E;
 }
 
-ul.social-buttons li a.icon_telegram:hover {
+ul li a.icon_telegram:hover {
     background-color: #0088cc;
     color: #fff;
   
 }
 
+ul li a.icon_default {
+    color: #2867B2;
+}
+
+ul li a.icon_default:hover {
+   background-color: #2867B2;
+   color: #fff;
+}
+
   
-ul.social-buttons li a.icon_facebook:hover {
+ul li a.icon_facebook:hover {
     background-color: #4267B2;
     color: #fff;
 }
 
-ul.social-buttons li a.icon_instagram:hover {
+ul li a.icon_instagram:hover {
     background-color: #E1306C;
     color: #fff;
 }
 
-ul.social-buttons li a.icon_twitter:hover {
+ul li a.icon_twitter:hover {
     background-color: #1DA1F2;
     color: #fff;
 }
 
-ul.social-buttons li a.icon_linkedin:hover {
+ul li a.icon_linkedin:hover {
     background-color: #2867B2;
     color: #fff;
 }
 
-ul.social-buttons li a.icon_youtube:hover {
+ul li a.icon_youtube:hover {
     background-color: red;
     color: #fff;
 }
@@ -262,14 +286,100 @@ ul.social-buttons li a.icon_youtube:hover {
     bottom: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     background-color: #008CBA;
     overflow: hidden;
     width: 100%;
     height: 0;
     transition: .5s ease;
   }
+
+ .btn_close{
+   
   
+    width: 100%;
+    padding: 10px;
+
+    background-color: #e54343;
+    color: white;
+    
+  
+}
+
+/*   
   .share_section:hover .share_screen {
     height: 300px;
-  }
+  } */
   
+
+  .modal-dialog{
+    max-width: 400px;
+}
+
+/* Allow Background Scroll on modal Open */
+.modal-open { overflow-y: auto; }
+
+
+.share_input{
+    display: flex;
+    justify-content: space-between;
+}
+.share_input input{
+    width: 50%;
+    padding-left:5px ;
+}
+
+.share_input a{
+    width: 40%;
+  margin-left: 10px;
+    text-decoration: none;
+    background-color: #128C7E;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.share_input i{
+  
+    padding-right: 5px;
+} 
+
+
+.share_social{
+    text-align: center;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-around; 
+}
+
+ul.share_social li {
+    display: inline-block;
+    margin: 2px;
+}
+
+  
+ul.share_social li a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    -webkit-box-shadow: 1px 1px 5px 1px #0F0F0F; 
+    box-shadow: 1px 1px 5px 1px #0F0F0F;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+
+@media (max-width: 576px) {
+    .contact_info{
+        padding: 0 10px;
+    }
+    
+}

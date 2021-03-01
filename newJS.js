@@ -21,18 +21,20 @@ const toggleMenu = () =>{
     if(screen.width<768){
         if(toggleFlag){
             menu.style.left = "-125px";
-            rightSection.style.marginLeft = "0";
-            var scrSize = screen.width+100;
+            rightSection.style.marginLeft = "0px";
+            var scrSize = screen.width;
                 rightSection.style.width =  scrSize+"px";
+                console.log("menu width "+rightSection.style.width);
                 togglerIcon.classList = "fas fa-bars fa-2x";
                 console.log(togglerIcon);
                 toggleFlag = 0;
         }
         else{
                 menu.style.left= "0px";
-                rightSection.style.marginLeft = "110px";
-            var scrSize = screen.width-110;
+                rightSection.style.marginLeft = "120px";
+            var scrSize = screen.width-130;
             rightSection.style.width =  scrSize+"px";
+            console.log("full width "+rightSection.style.width);
             togglerIcon.classList = "fas fa-times fa-2x";
             console.log(togglerIcon);
                 toggleFlag = 1;
@@ -149,3 +151,21 @@ function expandImage(imgs) {
 
 
 
+  document.querySelector(".whatsppBtn").addEventListener("click",function(e){
+    
+    const mobNumner = document.querySelector('#whatsppNumber').value;
+    console.log(mobNumner);
+    if(mobNumner.length<9){
+        e.preventDefault();
+      
+        alert("Mobile Number not valid");
+        
+    }
+    else{
+       const whatsAppAnchor = document.querySelector(".whatsppBtn");
+       console.log(whatsAppAnchor);
+       whatsAppAnchor.href = "https://wa.me/"+mobNumner+"?text=hi there";
+    }
+    
+
+})
