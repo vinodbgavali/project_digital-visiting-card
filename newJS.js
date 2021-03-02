@@ -20,20 +20,22 @@ const toggleMenu = () =>{
 
     if(screen.width<768){
         if(toggleFlag){
-            menu.style.left = "-125px";
-            rightSection.style.marginLeft = "0px";
-            var scrSize = screen.width;
-                rightSection.style.width =  scrSize+"px";
+            menu.style.left = "-110%";
+            rightSection.style.zIndex = "initial";
+            // rightSection.style.marginLeft = "0px";
+            // var scrSize = screen.width;
+            //     rightSection.style.width =  scrSize+"px";
                 console.log("menu width "+rightSection.style.width);
                 togglerIcon.classList = "fas fa-bars fa-2x";
                 console.log(togglerIcon);
                 toggleFlag = 0;
         }
         else{
-                menu.style.left= "0px";
-                rightSection.style.marginLeft = "120px";
-            var scrSize = screen.width-130;
-            rightSection.style.width =  scrSize+"px";
+                menu.style.left= "0";
+                rightSection.style.zIndex = "-1";
+            //     rightSection.style.marginLeft = "120px";
+            // var scrSize = screen.width-130;
+            // rightSection.style.width =  scrSize+"px";
             console.log("full width "+rightSection.style.width);
             togglerIcon.classList = "fas fa-times fa-2x";
             console.log(togglerIcon);
@@ -43,13 +45,6 @@ const toggleMenu = () =>{
 }
 
 
-function myFunction() {
-    document.getElementById("newform").reset();
-    const form_group = document.querySelector('.form_group');
-    form_group.className = "form_group col-sm-9";
-    console.log(formGroup);
-
-}
 
 const form = document.querySelector('#newform');
 const fullname = document.querySelector('#name');
