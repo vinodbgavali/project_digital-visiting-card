@@ -141,13 +141,19 @@ hr{
 
 
 .right_section{
-
+        
 
     transition: all 0.5s;
-   
+    position: relative;
     
 }
 
+.right_wrapper{
+    overflow: auto;
+    height: 100%;
+    background-color: white;
+border-radius: 10px;
+}
 
 
 
@@ -157,18 +163,12 @@ hr{
     /* height: 98vh; */
 
     /* width: 100%; */
-    background-color: white;
-    border-radius: 10px;
     padding: 10px;
-    -webkit-box-shadow: 1px 1px 5px 1px #0F0F0F; 
-    box-shadow: 1px 1px 5px 1px #0F0F0F;
+    /* -webkit-box-shadow: 1px 1px 5px 1px #0F0F0F; 
+    box-shadow: 1px 1px 5px 1px #0F0F0F; */
 
 }
 
-.tab_box{
-    padding: 10px;
-    position: relative;
-}
 
 .tab-content iframe{
     width: 100%;
@@ -681,6 +681,7 @@ ul.social-buttons li a.icon_youtube {
 
 @media (max-width: 767px) {
 
+
     .main_section{
         padding-right: 0;
         overflow: hidden;
@@ -745,12 +746,9 @@ ul.social-buttons li a.icon_youtube {
      
     }
 
-    .right_section{
+    .right_wrapper{
         margin-top: 10px;
-        overflow: auto;
     }
-
-   
     
 
     
@@ -776,7 +774,7 @@ ul.social-buttons li a.icon_youtube {
 
       .img_container img{
         height: 200px;
-
+        max-width: 90%;
     }
 
     #profile_header_tag{
