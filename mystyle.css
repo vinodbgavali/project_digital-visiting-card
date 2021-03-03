@@ -140,6 +140,11 @@ hr{
     z-index: 2;
 }
 
+.navbar-toggler{
+    display: none;
+}
+
+
 /********************** right_section main dispay ***********************/
 
 .right_section{
@@ -1079,7 +1084,7 @@ ul li a.icon_youtube:hover {
     }
     
     .navbar-toggler{
-        display: block;
+        display: block !important;
         margin-right: 10px;
     }
     

@@ -21,7 +21,7 @@ const toggleMenu = () =>{
     if(screen.width<768){
         if(toggleFlag){
             menu.style.left = "-110%";
-            rightSection.style.zIndex = "initial";
+            rightSection.style.zIndex = "";
             // rightSection.style.marginLeft = "0px";
             // var scrSize = screen.width;
             //     rightSection.style.width =  scrSize+"px";
