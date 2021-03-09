@@ -1,51 +1,3 @@
-toggleFlag = 0;
-const toggleMenu = () =>{
-    const menu = document.querySelector(".left_section_bottom");
-    const rightSection = document.querySelector(".right_section");
-    const toggler = document.querySelector(".navbar-toggler");
-    const togglerIcon = toggler.querySelector("i");
-
-    // clear the form after error and coming back to contact us page
-
-    // const form_group = document.querySelectorAll(".form_group");
-    // form_group.forEach(e => {
-    //     e.classList = "form_group";
-    //     console.log(e);
-    // });
-    // end-  clear the form after error and coming back to contact us page
-
-
-
-
-
-    if(screen.width<768){
-        if(toggleFlag){
-            menu.style.left = "-110%";
-            rightSection.style.zIndex = "";
-            // rightSection.style.marginLeft = "0px";
-            // var scrSize = screen.width;
-            //     rightSection.style.width =  scrSize+"px";
-                console.log("menu width "+rightSection.style.width);
-                togglerIcon.classList = "fas fa-bars fa-2x";
-                console.log(togglerIcon);
-                toggleFlag = 0;
-        }
-        else{
-                menu.style.left= "0";
-                rightSection.style.zIndex = "-1";
-            //     rightSection.style.marginLeft = "120px";
-            // var scrSize = screen.width-130;
-            // rightSection.style.width =  scrSize+"px";
-            console.log("full width "+rightSection.style.width);
-            togglerIcon.classList = "fas fa-times fa-2x";
-            console.log(togglerIcon);
-                toggleFlag = 1;
-        }
-    }
-}
-
-
-
 const form = document.querySelector('#newform');
 const fullname = document.querySelector('#name');
 const email = document.querySelector('#email');
@@ -104,6 +56,15 @@ const checkInput = () => {
     
 }
 
+const clearForm = () =>
+{
+  const form_group = document.querySelectorAll(".form_group");
+  form_group.forEach(e => {
+      e.classList = "form_group";
+  });
+}
+
+
 
 const setError = (labelFor, errMsg) =>{
     const form_input = labelFor.parentElement;
@@ -136,14 +97,7 @@ function expandImage(imgs) {
   }
 
 
-  const clearForm = () =>
-  {
-    const form_group = document.querySelectorAll(".form_group");
-    form_group.forEach(e => {
-        e.classList = "form_group";
-    });
-  }
-
+ 
 
 
   document.querySelector(".whatsppBtn").addEventListener("click",function(e){
@@ -163,4 +117,21 @@ function expandImage(imgs) {
     }
     
 
-})
+});
+
+
+var footerBtn = document.getElementsByClassName("footer_item");
+console.log(footerBtn);
+for (var i = 0; i < footerBtn.length; i++) {
+    footerBtn[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    if (current.length > 0) { 
+      current[0].className = current[0].className.replace(" active", "");
+    }
+    this.className += " active";
+    });
+  }
+
+
+
+
